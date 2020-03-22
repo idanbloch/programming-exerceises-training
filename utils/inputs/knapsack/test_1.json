@@ -1,0 +1,18 @@
+{
+  "visible": 1,
+  "arguments": {
+    "values": [
+      1,
+      1,
+      1
+    ],
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "capacity": 5
+  },
+  "time_limit": 1000,
+  "desired_output": 3
+}
