@@ -13,6 +13,6 @@
     ],
     "capacity": 5
   },
-  "time_limit": 1000,
+  "time_limit": 10,
   "desired_output": 3
 }

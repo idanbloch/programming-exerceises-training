@@ -10,11 +10,11 @@ Good luck!
 from utils.Test import test
 
 # Import your solution here
-from problems.knapsack.KnapsackSolved import knapsack_solution
+from problems.double_bit_switch.DoubleBitSwitchSolved import double_bit_switch_solution
 
 # Set current problem name (lowercase with spaces)
-NAME = 'knapsack'
+NAME = 'double bit switch'
 
 if __name__ == '__main__':
     # Fill relevant details
-    test(problem_name=NAME, idx=1, solution=knapsack_solution)
+    test(problem_name=NAME, idx=1, solution=double_bit_switch_solution)
