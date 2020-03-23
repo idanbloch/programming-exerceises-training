@@ -10,11 +10,11 @@ Good luck!
 from utils.Test import test
 
 # Import your solution here
-from problems.double_bit_switch.DoubleBitSwitchSolved import double_bit_switch_solution
+from problems.closest_pairs.ClosestPairsSolved import closest_pair_solution as solution
 
 # Set current problem name (lowercase with spaces)
-NAME = 'double bit switch'
+NAME = 'closest pairs'
 
 if __name__ == '__main__':
     # Fill relevant details
-    test(problem_name=NAME, idx=1, solution=double_bit_switch_solution)
+    test(problem_name=NAME, idx=5, solution=solution)
