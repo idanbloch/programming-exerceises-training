@@ -1,20 +1,22 @@
 """
 problem formalization:
 
-You are going on knapsack trip.
-You are planning to take with you N objects. each object is assigned knapsack 'Value', integer representing how
-important is it to you.
-In addition, each object has knapsack 'Weight'. the problem is that your backpack has knapsack limited capacity, so it
-can contain at most C kg of equipment.
+You are given 2 arrays:
+1. A, N-sized integers array.
+2. B, N-sized binary array.
+The values of A are constant, but ou are allowed to change the values of B by performing a double bit switch (DBS):
+In a double bit switch, you choose two adjacent bit in B and perform NOT operation on both of them (reminder: NOT(0)
+ = 1, NOT(1) = 0).
+ You can use the the double bit switch operation as many times as you want.
 
-Create an EFFICIENT algorithm to choose which of the object you take with you, maximizing the total value of objects,
-while maintaining the capacity limit of weights.
+Create an EFFICIENT algorithm to find the maximum value of dot product that can be achieved by performing the DBS
+operation over B.
 
 -----------------------------------------------------------------------------------------------------------------------
 
 Limitations:
 
-time - 10 seconds
+time - 0.5 seconds
 space - no limitation
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -24,7 +26,7 @@ Testing:
 After implementing your solution, test it with out given input by 'CheckSolution' file.
 You have a total of 6 test:
 - tests 1-4 are visible to you, and you can access it's input using 'get_input' method from utils.Test.
-- tests 5-6 are not visible to you, and need to pass them without knowing the input.
+- test 4 is not visible to you, and need to pass it without knowing the input.
 It is assured to you that all input is legal and fits the solution signature.
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -39,12 +41,11 @@ In the doc, analyze the runtime of the algorithm you used.
 from typing import List
 
 
-def knapsack_solution(v: List[int], w: List[float], c: float) -> int:
+def double_bit_switch_solution(a: List[int], b: List[bool]) -> int:
     """ Decides which items to take, by maximizing the total value of them
 
-    :param v: list of size N containing the values of the objects (all integers)
-    :param w: list of size N containing the weights of the objects (may not be integers)
-    :param c: the backpack weight capacity
-    :return: the total value possible under the limitations
+    :param a: list of integers
+    :param b: list of booleans
+    :return: maximal possible dot-product value that can be obtained by performing DBSs.
     """
     pass

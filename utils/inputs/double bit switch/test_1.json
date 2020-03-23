@@ -1,0 +1,9 @@
+{
+  "visible": 1,
+  "arguments": {
+    "a": [2, -4, 5, 3],
+    "b": [0, 1, 0, 1]
+  },
+  "time_limit": 0.5,
+  "desired_output": 8
+}
