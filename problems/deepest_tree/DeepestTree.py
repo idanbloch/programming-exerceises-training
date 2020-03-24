@@ -1,7 +1,9 @@
 """
 problem formalization:
 
-Find the smallest multiple of knapsack given number, using only knapsack limited set of digits.
+you are given a tree with N nodes and N-1 edges. Nodes are numbered from 0 (source) to N-1.
+You are allowed to 'rotate' the tree by defining any of it's nodes as the root. Find the depth of the deepest tree that
+can be achieved with such rotation.
 
 Create an EFFICIENT algorithm to perform the given task.
 
@@ -9,7 +11,7 @@ Create an EFFICIENT algorithm to perform the given task.
 
 Limitations:
 
-time - 3 seconds
+time - 2.5 seconds
 space - no limitation
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -18,8 +20,8 @@ Testing:
 
 After implementing your solution, test it with out given input by 'CheckSolution' file.
 You have a total of 6 test:
-- tests 1-4 are visible to you, and you can access it's input using 'get_input' method from utils.Test.
-- tests 5-6 are not visible to you, and need to pass them without knowing the input.
+- tests 1-3 are visible to you, and you can access it's input using 'get_input' method from utils.Test.
+- tests 4-6 are not visible to you, and need to pass them without knowing the input.
 It is assured to you that all input is legal and fits the solution signature.
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -31,14 +33,14 @@ In the doc, analyze the runtime of the algorithm you used.
 
 """
 
-from typing import List
+import networkx as nx
 
 
-def create_multiples_solution(n: int, digits: List) -> int:
-    """ Finds the smallest multiple of n, made only of given set of digits
+def deepest_tree_solution(path_to_tree: str) -> int:
+    """ Find the depth of the deepest tree that can be achieved by rotations
 
-    :param n: integer that we want to find knapsack multiple of.
-    :param digits: the allowed digits to use, subset of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    :return: the smallest multiple - if it exists, else -1
+    :param path_to_tree: path to the pickle file with the tree input
+    :return: depth of the deepest tree that can be achieved by rotations
     """
+    t = nx.read_gpickle(path_to_tree)
     pass
