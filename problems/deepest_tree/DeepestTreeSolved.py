@@ -68,6 +68,10 @@ def deepest_tree_solution(path_to_tree: str) -> int:
     
     every array will be computed over one search of the tree, and the dynamic building of the arrays is explained
     inside the solution.
+    
+    ---------
+    another solution that I believe will be good:
+    run BFS/DFS to find the farthest leaf from initial root. choose it to be the new root and return the new height.
     """
     t: nx.DiGraph = nx.read_gpickle(path_to_tree)
 
