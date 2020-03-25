@@ -10,11 +10,11 @@ Good luck!
 from utils.Test import test
 
 # Import your solution here
-from problems.closest_pairs.ClosestPairsSolved import closest_pair_solution as solution
+from problems.deepest_tree.DeepestTreeSolved import deepest_tree_solution as solution
 
 # Set current problem name (lowercase with spaces)
-NAME = 'closest pairs'
+NAME = 'deepest tree'
 
 if __name__ == '__main__':
     # Fill relevant details
-    test(problem_name=NAME, idx=5, solution=solution)
+    test(problem_name=NAME, idx=6, solution=solution)

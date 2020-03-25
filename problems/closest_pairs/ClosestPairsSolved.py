@@ -6,6 +6,19 @@ the sum of the pair with the highest sum to the sum of the pair with the lowest 
 
 Create an EFFICIENT algorithm to perform the given task.
 
+***
+In addition:
+
+prove the optimality of your solution.
+***
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Example:
+
+input: [4, 7, 11, 18]
+output: 4
+
 -----------------------------------------------------------------------------------------------------------------------
 
 Limitations:
