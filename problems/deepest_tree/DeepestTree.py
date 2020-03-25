@@ -9,6 +9,15 @@ Create an EFFICIENT algorithm to perform the given task.
 
 -----------------------------------------------------------------------------------------------------------------------
 
+Example:
+
+input: shown in tree.jpg
+output: 5
+
+(the process of rotation/root changing is shown in rotated_tree.jpg)
+
+-----------------------------------------------------------------------------------------------------------------------
+
 Limitations:
 
 time - 2.5 seconds

@@ -10,11 +10,18 @@ Create an EFFICIENT algorithm to perform the given task.
 ***
 In addition:
 
-1. prove the optimality of your solution.
-2. prove that you have reached the asymptotic run-time limit.
+prove the optimality of your solution.
 ***
 
 -----------------------------------------------------------------------------------------------------------------------
+
+Example:
+
+input: [4, 7, 11, 18]
+output: 4
+
+-----------------------------------------------------------------------------------------------------------------------
+
 
 Limitations:
 
