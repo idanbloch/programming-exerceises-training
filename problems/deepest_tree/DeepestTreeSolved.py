@@ -30,7 +30,7 @@ Testing:
 After implementing your solution, test it with out given input by 'CheckSolution' file.
 You have a total of 6 test:
 - tests 1-4 are visible to you, and you can access it's input using 'get_input' method from utils.Test.
-- tests 5-6 are not visible to you, and need to pass them without knowing the input.
+- tests 5-7 are not visible to you, and need to pass them without knowing the input.
 It is assured to you that all input is legal and fits the solution signature.
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -68,6 +68,10 @@ def deepest_tree_solution(path_to_tree: str) -> int:
     
     every array will be computed over one search of the tree, and the dynamic building of the arrays is explained
     inside the solution.
+    
+    ---------
+    another solution that I believe will be good:
+    run BFS/DFS to find the farthest leaf from initial root. choose it to be the new root and return the new height.
     """
     t: nx.DiGraph = nx.read_gpickle(path_to_tree)
 

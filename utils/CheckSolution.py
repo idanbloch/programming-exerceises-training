@@ -17,4 +17,4 @@ NAME = 'deepest tree'
 
 if __name__ == '__main__':
     # Fill relevant details
-    test(problem_name=NAME, idx=6, solution=solution)
+    test(problem_name=NAME, idx=7, solution=solution)

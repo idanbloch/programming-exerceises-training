@@ -29,8 +29,8 @@ Testing:
 
 After implementing your solution, test it with out given input by 'CheckSolution' file.
 You have a total of 6 test:
-- tests 1-3 are visible to you, and you can access it's input using 'get_input' method from utils.Test.
-- tests 4-6 are not visible to you, and need to pass them without knowing the input.
+- tests 1-4 are visible to you, and you can access it's input using 'get_input' method from utils.Test.
+- tests 5-7 are not visible to you, and need to pass them without knowing the input.
 It is assured to you that all input is legal and fits the solution signature.
 
 -----------------------------------------------------------------------------------------------------------------------
