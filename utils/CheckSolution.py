@@ -10,11 +10,11 @@ Good luck!
 from utils.Test import test
 
 # Import your solution here
-from problems.deepest_tree.DeepestTreeSolved import deepest_tree_solution as solution
+from problems.shortest_path_amount.ShortestPathAmountSolved import shortest_path_amount_solution as solution
 
 # Set current problem name (lowercase with spaces)
-NAME = 'deepest tree'
+NAME = 'shortest path amount'
 
 if __name__ == '__main__':
     # Fill relevant details
-    test(problem_name=NAME, idx=7, solution=solution)
+    test(problem_name=NAME, idx=10, solution=solution)
