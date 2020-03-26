@@ -10,11 +10,11 @@ Good luck!
 from utils.Test import test
 
 # Import your solution here
-from problems.shortest_path_amount.ShortestPathAmountSolved import shortest_path_amount_solution as solution
+from problems.string_chain.StringChainSolved import string_chain_solution as solution
 
 # Set current problem name (lowercase with spaces)
-NAME = 'shortest path amount'
+NAME = 'string chain'
 
 if __name__ == '__main__':
     # Fill relevant details
-    test(problem_name=NAME, idx=10, solution=solution)
+    test(problem_name=NAME, idx=6, solution=solution)
