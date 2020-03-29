@@ -10,10 +10,10 @@ Good luck!
 from utils.Test import test
 
 # Import your solution here
-from problems.string_chain.StringChainSolved import string_chain_solution as solution
+from problems.deepest_tree.DeepestTreeSolved import deepest_tree_solution as solution
 
 # Set current problem name (lowercase with spaces)
-NAME = 'string chain'
+NAME = 'deepest tree'
 
 if __name__ == '__main__':
     # Fill relevant details

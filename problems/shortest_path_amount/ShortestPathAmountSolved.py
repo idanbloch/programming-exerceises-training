@@ -51,6 +51,7 @@ In the doc, analyze the runtime of the algorithm you used.
 from typing import List
 import networkx as nx
 import numpy as np
+import os
 
 
 def shortest_path_amount_solution(path_to_graph: str, source: int) -> List[int]:
@@ -68,7 +69,7 @@ def shortest_path_amount_solution(path_to_graph: str, source: int) -> List[int]:
     update the counter by the amount of paths to node we arrived from.
     """
 
-    g = nx.read_gpickle(path_to_graph)
+    g = nx.read_gpickle(os.path.join(os.getcwd(), path_to_graph))
     n = len(g.nodes)
 
     dists = np.tile(np.inf, n)  # length of shortest path to each node so far

@@ -43,6 +43,7 @@ In the doc, analyze the runtime of the algorithm you used.
 """
 
 import networkx as nx
+import os
 
 
 def deepest_tree_solution(path_to_tree: str) -> int:
@@ -51,5 +52,5 @@ def deepest_tree_solution(path_to_tree: str) -> int:
     :param path_to_tree: path to the pickle file with the tree input
     :return: depth of the deepest tree that can be achieved by rotations
     """
-    t = nx.read_gpickle(path_to_tree)
+    t = nx.read_gpickle(os.path.join(os.getcwd(), path_to_tree))
     pass
