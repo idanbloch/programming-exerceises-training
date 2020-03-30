@@ -1,7 +1,7 @@
 {
   "visible": 1,
   "arguments": {
-    "path": "C:\\Users\\gilad\\Desktop\\Idan\\training\\programming-exerceises-training\\utils\\inputs\\shortest path amount\\graphs\\graph_9.gpickle",
+    "path": "inputs\\shortest path amount\\graphs\\graph_9.gpickle",
     "source": 0
   },
   "time_limit": 5,

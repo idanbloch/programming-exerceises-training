@@ -44,6 +44,7 @@ In the doc, analyze the runtime of the algorithm you used.
 
 import networkx as nx
 import numpy as np
+import os
 
 
 def deepest_tree_solution(path_to_tree: str) -> int:
@@ -73,7 +74,7 @@ def deepest_tree_solution(path_to_tree: str) -> int:
     another solution that I believe will be good:
     run BFS/DFS to find the farthest leaf from initial root. choose it to be the new root and return the new height.
     """
-    t: nx.DiGraph = nx.read_gpickle(path_to_tree)
+    t: nx.DiGraph = nx.read_gpickle(os.path.join(os.getcwd(), path_to_tree))
 
     n = len(t.nodes())
     source = 0

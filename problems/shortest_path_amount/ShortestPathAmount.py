@@ -50,6 +50,7 @@ In the doc, analyze the runtime of the algorithm you used.
 
 from typing import List
 import networkx as nx
+import os
 
 
 def shortest_path_amount_solution(path_to_graph: str, source: int) -> List[int]:
@@ -59,5 +60,5 @@ def shortest_path_amount_solution(path_to_graph: str, source: int) -> List[int]:
     :param source: the number od the wanted source
     :return: array with the amount of shortest paths
     """
-    g = nx.read_gpickle(path_to_graph)
+    g = nx.read_gpickle(os.path.join(os.getcwd(), path_to_graph))
     pass
